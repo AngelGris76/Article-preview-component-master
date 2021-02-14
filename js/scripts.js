@@ -28,11 +28,7 @@ article.innerHTML = `<div class="article__header">
                         </div>
                         <div class="article__createdata">
                             <h2 class="article__authorname">${articleData.author}</h2>
-                            <time class="article__time" date="${articleData.date}">
-                                ${articleData.date.substring(8,10)} 
-                                ${month[parseInt(articleData.date.substring(5, 7))]} 
-                                ${articleData.date.substring(0,4)}
-                            </time>
+                            <time class="article__time" datetime="${articleData.date}">${articleData.date.substring(8,10)} ${month[parseInt(articleData.date.substring(5, 7))]} ${articleData.date.substring(0,4)}</time>
                         </div>
                     </footer>
                     <div class="article__socials article__socials--hide">
